@@ -3,7 +3,6 @@ using System.Threading;
 
 class Program
 {
-
   static void Main()
   {
     const float initalState = 100; // valor inicial e máximo para cada caracteristica do animal
@@ -50,7 +49,6 @@ class Program
     talks[26] = "Você sempre me alegra quando estou triste.";
     talks[27] = "Fui confundido com um brinquedo hoje!";
     talks[28] = "Sonhei que voava e era incrível!";
-
 
     Console.WriteLine("Olá! Seja bem-vindo(a) ao My Digital Animal\n");
 
@@ -207,6 +205,9 @@ class Program
           case 4:
             isContinue = false;
             break;
+          default:
+            Console.Write("Faça uma escolha válida");
+            throw new Exception();
         }
 
       }
